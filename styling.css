@@ -1,0 +1,173 @@
+.navbar{
+    background-color: rgb(215, 162, 215);
+    border-radius: 30px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(75, 16, 52);
+}
+.search{
+    float: right;
+    padding: 10px 75px;
+}
+.navbar input{
+    border: 4px solid rgb(75, 16, 52);
+    font-style: italic;
+    border-radius: 14px;
+    padding: 3px 17px;
+}
+.navbar li a:hover{
+    color: rgb(195, 75, 149);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora';
+    background-color: rgb(199, 168, 143);
+}
+.container{
+    background-color: rgb(225, 209, 145);
+    width: 900px;
+    border: 4px solid rgb(158, 167, 105);
+    margin: 40px auto;
+    text-align: center;
+    /* text-align: end;
+    text-align: right;
+    text-align: justify; */
+}
+.items{
+    border: 4px solid rgb(7, 162, 152);
+    border-radius: 9px;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background-color: rgb(188, 212, 202);
+    background-image: url('https://getbootstrap.com/docs/5.2/assets/img/parcel.png');
+    background-repeat: no-repeat;
+    background-position: 120px 50px;
+
+}
+#fruits{
+    float: left;
+    width: 48%;
+}
+#computer{
+    float: right;
+    width: 48%;
+}
+#Stationary{
+    /* float: left; */
+    /* clear: left;
+    clear: right; */
+    clear: both;
+    width: 95%;
+    margin: 8px auto;
+}
+.container1{
+    height: 344px;
+    width: 60%;
+    margin: 40px auto;
+    background-color: rgb(225, 209, 145);
+    border: 5px solid rgb(158, 167, 105);
+    /* Initilize the container as a flex box */
+    display: flex;
+    /* flex proprty for flex container */
+    flex-direction: row;   /*by-default*/
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* flex-flow: row-reverse wrap; */
+
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+}
+.item{
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(7, 162, 152);
+    background-color: rgb(188, 212, 202);
+    margin: 10px;
+    padding: 3px;
+}
+#item1{
+    order: 2;
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    flex-basis: 330px;
+}
+#item2{
+    order: 40;
+    /* flex-grow: 5; */
+
+}
+#item3{
+    align-self: flex-end;
+    /* align-self: flex-start; */
+    /* align-self: center; */
+}  
+.cylinder{
+    display: flex;
+}
+.card{
+    padding: 23px 12px;
+    /* border: 3px solid greenyellow; */
+    margin: 23px 12px;
+    background-color: burlywood;
+    box-shadow: 7px 5px 10px green;
+}
+.card h2{
+    /* text-shadow: 2px 1px white; */
+    text-shadow: 3px 2px 2px white;
+}
+.circle{
+    display: flex;
+    background-color: yellowgreen;
+}
+.trio{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* animation-name: nawal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 8s;
+    animation-direction: reverse; */
+    animation: nawal 5s ease-in 1s reverse;
+}
+@keyframes nawal{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+         top: 250px;
+         left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 0px;
+        left: 250px;
+    }
+}
